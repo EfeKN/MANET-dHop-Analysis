@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+../src/maxmindclusterproject -n .:../src $*
+# for shared lib, use: opp_run -l ../src/maxmindclusterproject -n .:../src $*
