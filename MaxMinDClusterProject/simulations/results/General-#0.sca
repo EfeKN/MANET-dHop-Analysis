@@ -1,0 +1,58 @@
+version 3
+run General-0-20251126-00:54:17-5272
+attr configname General
+attr datetime 20251126-00:54:17
+attr datetimef 20251126-005417
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network MaxMinNodeTest
+attr processid 5272
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../inet4.5/images
+config network MaxMinNodeTest
+config sim-time-limit 100s
+
+par MaxMinNodeTest.n10.out[0].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n2.out[0].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n10.out[1].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n7.out[0].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n10.out[2].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n1.out[0].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n28.out[0].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n1.out[1].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n28.out[1].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n35.out[0].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n35.out[1].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n73.out[0].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n28.out[2].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n7.out[1].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n35.out[2].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n7.out[2].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n73.out[1].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n1.out[2].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n2.out[1].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n1.out[3].channel typename "\"ned.IdealChannel\""
+par MaxMinNodeTest.n1 typename "\"maxmindclusterproject.MaxMinNode\""
+par MaxMinNodeTest.n1 d 2
+par MaxMinNodeTest.n10 typename "\"maxmindclusterproject.MaxMinNode\""
+par MaxMinNodeTest.n10 d 2
+par MaxMinNodeTest.n35 typename "\"maxmindclusterproject.MaxMinNode\""
+par MaxMinNodeTest.n35 d 2
+par MaxMinNodeTest.n7 typename "\"maxmindclusterproject.MaxMinNode\""
+par MaxMinNodeTest.n7 d 2
+par MaxMinNodeTest.n2 typename "\"maxmindclusterproject.MaxMinNode\""
+par MaxMinNodeTest.n2 d 2
+par MaxMinNodeTest.n73 typename "\"maxmindclusterproject.MaxMinNode\""
+par MaxMinNodeTest.n73 d 2
+par MaxMinNodeTest.n28 typename "\"maxmindclusterproject.MaxMinNode\""
+par MaxMinNodeTest.n28 d 2
+par MaxMinNodeTest typename "\"maxmindclusterproject.simulations.MaxMinNodeTest\""
+
