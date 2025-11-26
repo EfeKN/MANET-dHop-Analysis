@@ -1,58 +1,167 @@
 version 3
-run General-0-20251126-00:54:17-5272
+run General-0-20251127-00:58:21-24320
 attr configname General
-attr datetime 20251126-00:54:17
-attr datetimef 20251126-005417
+attr datetime 20251127-00:58:21
+attr datetimef 20251127-005821
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
-attr network MaxMinNodeTest
-attr processid 5272
+attr network SampleManet2
+attr processid 24320
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 config image-path ../../inet4.5/images
-config network MaxMinNodeTest
+config network SampleManet2
 config sim-time-limit 100s
 
-par MaxMinNodeTest.n10.out[0].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n2.out[0].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n10.out[1].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n7.out[0].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n10.out[2].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n1.out[0].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n28.out[0].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n1.out[1].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n28.out[1].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n35.out[0].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n35.out[1].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n73.out[0].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n28.out[2].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n7.out[1].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n35.out[2].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n7.out[2].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n73.out[1].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n1.out[2].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n2.out[1].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n1.out[3].channel typename "\"ned.IdealChannel\""
-par MaxMinNodeTest.n1 typename "\"maxmindclusterproject.MaxMinNode\""
-par MaxMinNodeTest.n1 d 2
-par MaxMinNodeTest.n10 typename "\"maxmindclusterproject.MaxMinNode\""
-par MaxMinNodeTest.n10 d 2
-par MaxMinNodeTest.n35 typename "\"maxmindclusterproject.MaxMinNode\""
-par MaxMinNodeTest.n35 d 2
-par MaxMinNodeTest.n7 typename "\"maxmindclusterproject.MaxMinNode\""
-par MaxMinNodeTest.n7 d 2
-par MaxMinNodeTest.n2 typename "\"maxmindclusterproject.MaxMinNode\""
-par MaxMinNodeTest.n2 d 2
-par MaxMinNodeTest.n73 typename "\"maxmindclusterproject.MaxMinNode\""
-par MaxMinNodeTest.n73 d 2
-par MaxMinNodeTest.n28 typename "\"maxmindclusterproject.MaxMinNode\""
-par MaxMinNodeTest.n28 d 2
-par MaxMinNodeTest typename "\"maxmindclusterproject.simulations.MaxMinNodeTest\""
+par SampleManet2.n10.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n35.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n10.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n1.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n1.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n2.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n2.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n73.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n73.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n7.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n1.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n7.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n7.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n35.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n73.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n28.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n73.out[3].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n100.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n85.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n100.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n73.out[4].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n16.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n85.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n16.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n100.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n61.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n41.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n61.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n38.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n61.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n100.out[3].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n15.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n100.out[4].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n11.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n85.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n48.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n3.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n31.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n19.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n85.out[3].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n19.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n31.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n3.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n48.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n35.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n8.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n8.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n16.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n35.out[3].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n23.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n23.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n22.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n23.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n21.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n21.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n37.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n21.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n65.out[0].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n37.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n65.out[1].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n8.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n65.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n16.out[3].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n65.out[3].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n85.out[4].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n65.out[4].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n31.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n37.out[2].channel typename "\"ned.IdealChannel\""
+par SampleManet2.n1 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n1 d 3
+par SampleManet2.n1 nodeId 1
+par SampleManet2.n10 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n10 d 3
+par SampleManet2.n10 nodeId 10
+par SampleManet2.n35 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n35 d 3
+par SampleManet2.n35 nodeId 35
+par SampleManet2.n7 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n7 d 3
+par SampleManet2.n7 nodeId 7
+par SampleManet2.n2 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n2 d 3
+par SampleManet2.n2 nodeId 2
+par SampleManet2.n73 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n73 d 3
+par SampleManet2.n73 nodeId 73
+par SampleManet2.n28 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n28 d 3
+par SampleManet2.n28 nodeId 28
+par SampleManet2.n22 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n22 d 3
+par SampleManet2.n22 nodeId 22
+par SampleManet2.n23 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n23 d 3
+par SampleManet2.n23 nodeId 23
+par SampleManet2.n8 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n8 d 3
+par SampleManet2.n8 nodeId 8
+par SampleManet2.n65 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n65 d 3
+par SampleManet2.n65 nodeId 65
+par SampleManet2.n21 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n21 d 3
+par SampleManet2.n21 nodeId 21
+par SampleManet2.n37 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n37 d 3
+par SampleManet2.n37 nodeId 37
+par SampleManet2.n41 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n41 d 3
+par SampleManet2.n41 nodeId 41
+par SampleManet2.n61 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n61 d 3
+par SampleManet2.n61 nodeId 61
+par SampleManet2.n100 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n100 d 3
+par SampleManet2.n100 nodeId 100
+par SampleManet2.n38 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n38 d 3
+par SampleManet2.n38 nodeId 38
+par SampleManet2.n15 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n15 d 3
+par SampleManet2.n15 nodeId 15
+par SampleManet2.n11 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n11 d 3
+par SampleManet2.n11 nodeId 11
+par SampleManet2.n16 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n16 d 3
+par SampleManet2.n16 nodeId 16
+par SampleManet2.n85 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n85 d 3
+par SampleManet2.n85 nodeId 85
+par SampleManet2.n19 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n19 d 3
+par SampleManet2.n19 nodeId 19
+par SampleManet2.n31 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n31 d 3
+par SampleManet2.n31 nodeId 31
+par SampleManet2.n48 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n48 d 3
+par SampleManet2.n48 nodeId 48
+par SampleManet2.n3 typename "\"maxmindclusterproject.MaxMinNode\""
+par SampleManet2.n3 d 3
+par SampleManet2.n3 nodeId 3
+par SampleManet2 typename "\"maxmindclusterproject.simulations.SampleManet2\""
 

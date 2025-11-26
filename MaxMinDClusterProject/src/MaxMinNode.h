@@ -17,6 +17,9 @@
 #define __MAXMİNDCLUSTERPROJECT_MAXMİNNODE_H_
 
 #include <omnetpp.h>
+#include <vector>
+#include <algorithm>
+#include "MaxMinMessage_m.h"
 
 using namespace omnetpp;
 
@@ -26,8 +29,34 @@ using namespace omnetpp;
 class MaxMinNode : public cSimpleModule
 {
   protected:
+    // Configuration
+    int d;
+    int myId;
+
+    // Algorithm State
+    int currentRound;
+    int maxRounds; // Will be 2*d
+    int numNeighbors;
+
+    // Data Structures
+    // We use std::vector (0-indexed), so round 1 is stored at index 1 for clarity
+    std::vector<int> WINNER;
+    std::vector<int> SENDER;
+
+    // Inbox to handle asynchronous messages: Map<Round, List of Received IDs>
+    // This allows us to buffer messages for Round 2 if we are still processing Round 1
+    std::map<int, std::vector<int>> roundInbox;
+
     virtual void initialize() override;
     virtual void handleMessage(cMessage *msg) override;
+
+    // Helper functions
+    void startNextRound();
+    void processRoundLogic();
+    void floodMaxLogic();
+    void floodMinLogic();
+    void selectClusterHead();
+    void broadcastWinner(int round, int winnerId);
 };
 
 #endif
