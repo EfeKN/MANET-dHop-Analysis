@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for MaxMinDClusterProject
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep
+#  opp_makemake -f --deep -KİNET4_5_PROJ=../../inet4.5 -DINET_IMPORT -I$$\(İNET4_5_PROJ\)/src -L$$\(İNET4_5_PROJ\)/src -lINET$$\(D\)
 #
 
 # Name of target to be created (-o option)
@@ -17,13 +17,13 @@ USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(QTENV_LIBS) $(CMDENV_LIBS)
 #USERIF_LIBS = $(QTENV_LIBS)
 
 # C++ include paths (with -I)
-INCLUDE_PATH =
+INCLUDE_PATH = -I$(İNET4_5_PROJ)/src
 
 # Additional object and library files to link with
 EXTRA_OBJS =
 
 # Additional libraries (-L, -l options)
-LIBS =
+LIBS = $(LDFLAG_LIBPATH)$(İNET4_5_PROJ)/src  -lINET$(D)
 
 # Output directory
 PROJECT_OUTPUT_DIR = ../out
@@ -31,14 +31,18 @@ PROJECTRELATIVE_PATH = src
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
-OBJS = $O/MaxMinNode.o $O/MaxMinMessage_m.o
+OBJS = $O/MaxMinClustering2.o $O/MaxMinNode.o $O/RandomInitializer.o $O/MaxMinMessage_m.o $O/MaxMinMessage2_m.o
 
 # Message files
 MSGFILES = \
-    MaxMinMessage.msg
+    MaxMinMessage.msg \
+    MaxMinMessage2.msg
 
 # SM files
 SMFILES =
+
+# Other makefile variables (-K)
+İNET4_5_PROJ=../../inet4.5
 
 #------------------------------------------------------------------------------
 
@@ -58,8 +62,11 @@ include $(CONFIGFILE)
 
 # Simulation kernel and user interface libraries
 OMNETPP_LIBS = $(OPPMAIN_LIB) $(USERIF_LIBS) $(KERNEL_LIBS) $(SYS_LIBS)
+ifneq ($(PLATFORM),win32)
+LIBS += -Wl,-rpath,$(abspath $(İNET4_5_PROJ)/src)
+endif
 
-COPTS = $(CFLAGS) $(IMPORT_DEFINES)  $(INCLUDE_PATH) -I$(OMNETPP_INCL_DIR)
+COPTS = $(CFLAGS) $(IMPORT_DEFINES) -DINET_IMPORT $(INCLUDE_PATH) -I$(OMNETPP_INCL_DIR)
 MSGCOPTS = $(INCLUDE_PATH)
 SMCOPTS =
 
